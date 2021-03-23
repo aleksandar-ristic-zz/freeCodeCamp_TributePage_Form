@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Big Jim's <span>Gym</span></h1>
+        <p id="description">Would you please take a few moments to help you and us both for more pleasant experience.</p>
+    </header>
+    <div id="submitted" class="hidden">
+        <div class="background"></div>
+        <div>
+            <p>Thank you very much for taking time to complete survey!</p>
+            <h2>Looking forward to seeing you at Big Jim's <span>Gym</span>!</h2>
+        </div>
+       
+        <div class="social">
+            <span>Don't forget to like and follow:</span>
+
+            <div class="social-media">
+                <a href="#"><i class="fas fa-hashtag"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+
+            <button onclick="btnHandleSubmit()">return</button>
+        </div>
+    </div>
+    <main class="survey-container">
+        <div class="background"></div>
+        <img src="https://source.unsplash.com/1oX5pnHdrm4/350x350" alt="gym-img" class="form-img">
+
+        <form id="survey-form">
+            <div class="input-container basic-info">
+                <h2>Basic info:</h2>
+                <div class="grid-container">
+                        
+                    <label id=name-label for="name">Your full name:</label>
+                    <div class="name-container">
+                        <input type="text" placeholder="input name here" name="name" id="name" required>  
+                    </div>
+                    <label id="email-label" for="email">Your email address:</label>
+                    <div class="email-container">
+                        <input type="email" placeholder="input email here" name="email" id="email" required>   
+                    </div>
+                    <label for="gender">Choose your gender:</label>
+                    <div class="dropdown-container">
+                        <select name="gender" id="dropdown">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="undisclosed">Undisclosed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="icon form-img-el validate-input" data-validate="Name is required!"></div>
+                        <div class="icon form-img-el validate-input" data-validate="Email is required!"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="training-container input-container">
+                <h2>Training info:</h2>
+
+                <div class="radio-container">
+                    <p class="training-length">How long have you  been training at the Big Jim's <span>Gym</span> ?</p>
+
+                    <label class="container">less than 6 mo
+                        <input type="radio" checked="checked" name="radio" value="1">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container"> 6 mo - 1 year
+                        <input type="radio" name="radio" value="2">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">1 - 2 years
+                        <input type="radio" name="radio" value="3">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">2 - 4 years
+                        <input type="radio" name="radio" value="4">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">over 4 years
+                        <input type="radio" name="radio" value="5">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+                <div class="number-container">
+                    <label id="number-label" for="number">How many times a week do you visit us? </label>
+                    <input type="number" placeholder="..." name="number" id="number" min="1" max="14" required>
+                    <div class="icon form-img-el validate-input" data-validate="Must be a number!"></div>
+                </div>
+                <div class="checkbox-container">
+                    <p>Which is your purpose of coming to Big Jim's <span>Gym</span> ?</p>
+                       
+                    <div class="grid-container">
+                        <label class="container">Athletic
+                            <input type="checkbox" checked="checked" name="machine1" value="athletic">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Muscle Building
+                            <input type="checkbox" checked="checked" name="machine2" value="muscle-building">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">General Fitness
+                            <input type="checkbox" checked="checked" value="general-fitness">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Weight Loss
+                            <input type="checkbox" checked="checked" value="weight-loss">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Rehab Fit
+                            <input type="checkbox" checked="checked"  value="rehab-fit">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Metabolic Fit
+                            <input type="checkbox" checked="checked"  value="metabolic-fit">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Immunity Boost
+                            <input type="checkbox" checked="checked"  value="immunity-boost">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Body Shaping
+                            <input type="checkbox" checked="checked"  value="body-shaping">
+                            <span class="checkmark"></span>
+                        </label>
+ 
+                    </div>  
+                </div>
+            </div>
+            <div class="textarea-container">
+                <p>What would you like to see in Jim's Big <span>Gym</span> in the future?</p>
+                <textarea name="suggestions" id="textarea" cols="35" rows="5" placeholder="Write your suggestions here.."></textarea>
+            </div>
+
+            <div class="btn-container">
+                <div class="btn-wrapper">
+                    <div class="btn-bg-change"></div>
+                    <button id="submit" class="btn-survey" onclick="btnHandleSubmit()">SUBMIT SURVEY</button>
+                </div>
+            </div> 
+        </form>
+    </main>
+</body>
+</html>
