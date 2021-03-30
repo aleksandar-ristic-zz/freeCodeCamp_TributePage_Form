@@ -84,8 +84,8 @@ header p {
 /* *** [Survey] *** */
 .survey-container {
   position: relative;
-  padding: 5em 0;
   margin-top: 4em;
+  padding: 5em 0;
   transform: translateY(-400%);
   transition: transform 1.5s ease;
 }
@@ -110,7 +110,16 @@ header p {
   z-index: -10;
 }
 
+#survey-form {
+  /* *** Basic Info *** */
+  /* *** Training Info *** */
+  /* Radio */
+  /* *** Checkbox *** */
+  /* *** Textarea *** */
+}
+
 #survey-form .input-container {
+  width: 100%;
   position: relative;
   margin: 0 1em;
 }
@@ -439,6 +448,8 @@ header p {
 
 #survey-form .textarea-container textarea {
   max-width: 80vw;
+  width: 100%;
+  height: 15vh;
   margin-bottom: 2em;
   resize: vertical;
   font-size: 1em;
