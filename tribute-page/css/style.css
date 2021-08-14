@@ -84,7 +84,7 @@ body {
     border: 1px solid transparent;
     color: var(--light);
     text-decoration: none;
-    transition: border 350ms ease-in;
+    transition: border-color 0.35s ease-in;
 }
 
 .language a:hover {
