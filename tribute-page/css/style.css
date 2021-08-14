@@ -271,7 +271,7 @@ footer {
 
 .back-to-top i:hover,
 .back-to-top i:active {
-    animation: move 1.2s linear infinite;
+    animation: move 0.35s linear infinite;
 }
 
 /* *** [7.Utils] *** */
@@ -306,7 +306,7 @@ h2::before {
 
 .box {
     transform: translateX(400%);
-    transition: transform 1.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .box:nth-of-type(odd) {
@@ -319,8 +319,8 @@ h2::before {
 
 .package {
     transform:translateY(-300%);
-    transition: transform 1.2s ease;
-    transition-delay: .5s;
+    transition: transform 0.5s ease;
+    transition-delay: 0.3s;
 }
 
 .package.open {
